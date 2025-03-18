@@ -1,2 +1,2 @@
-# algobonds
-a Friendship Algorithm App that:
+# AlgoBonds
+This is the AlgoBonds project repository.
