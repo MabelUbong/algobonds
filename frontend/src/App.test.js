@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the app and adds a relationship', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  
+  const nameInput = screen.getByPlaceholderText(/name/i);
+  fireEvent.change(nameInput, { target: { value: 'Alice' } });
+
+  const timeInput = screen.getByPlaceholderText(/time/i);
+  fireEvent.change(timeInput, { target: { value: '8' } });
+
+  const addButton = screen.getByText(/add relationship/i);
+  fireEvent.click(addButton);
+
+  expect(screen.getByText(/Alice/i)).toBeInTheDocument();
 });
