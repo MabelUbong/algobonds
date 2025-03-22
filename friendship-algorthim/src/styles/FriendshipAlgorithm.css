@@ -1,0 +1,189 @@
+/* src/styles/FriendshipAlgorithm.css */
+.friendship-algorithm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .app-header h1 {
+    color: #4a4a4a;
+    margin-bottom: 5px;
+  }
+  
+  .app-header p {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .form-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 12px;
+  }
+  
+  .add-button {
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .add-button:hover {
+    background-color: #3b5bdb;
+  }
+  
+  .relationships-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .no-relationships {
+    color: #777;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-style: italic;
+  }
+  
+  .relationship-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .relationship-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .relationship-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    padding: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .card-header .emoji {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    font-size: 18px;
+    flex-grow: 1;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    color: #ff5252;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .delete-button:hover {
+    background-color: rgba(255, 82, 82, 0.1);
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .score {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .score span {
+    color: #4c6ef5;
+  }
+  
+  .metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .metric {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .metric-label {
+    color: #777;
+  }
+  
+  .metric-value {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .relationship-cards {
+      grid-template-columns: 1fr;
+    }
+  }

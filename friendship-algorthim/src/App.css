@@ -1,0 +1,18 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
